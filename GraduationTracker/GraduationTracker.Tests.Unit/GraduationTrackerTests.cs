@@ -79,7 +79,7 @@ namespace GraduationTracker.Tests.Unit
             }
 
             
-            Assert.IsFalse(graduated.Any());
+            Assert.IsTrue(graduated.Where(g => g.Item1).ToList().Count ==3);
 
         }
 
